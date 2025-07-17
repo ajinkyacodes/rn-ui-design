@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React, { FC } from 'react';
 import SendButton from './SendButton';
-import SocialCircle from './SocialCircle';
 import { s, vs } from 'react-native-size-matters';
 
 interface SocialSection {
@@ -11,7 +10,7 @@ interface SocialSection {
 const SocialSection: FC<SocialSection> = ({ title, icon }) => {
 	return (
 		<View style={styles.container}>
-			{/* <SocialCircle /> */}
+            {/* Not using <SocialCircle /> to avoid prop drilling. Instead using only circle styling on <View> tag */}
 			<View style={styles.circle}>{icon}</View>
 			<Text style={styles.text}>{title}</Text>
 			<SendButton />
