@@ -18,8 +18,8 @@ const AddButton = () => {
 				marginTop: vs(15),
 			}}
 		>
-			<Feather name='plus' size={24} color='black' />
-			<Text style={{ color: '#FF7622', fontSize: s(14), fontWeight: 'bold' }}>
+			<Feather name='plus' size={24} color='#FF7622' />
+			<Text style={{ color: '#FF7622', fontSize: s(14), fontWeight: 'bold', paddingLeft: s(5) }}>
 				Add New
 			</Text>
 		</TouchableOpacity>

@@ -2,11 +2,22 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { s, vs } from 'react-native-size-matters';
 import { BankCardIcon } from '../assets/Icons';
+import LottieView from 'lottie-react-native';
 
 const BankCardBox = () => {
 	return (
 		<View style={styles.container}>
 			<BankCardIcon />
+			{/* <LottieView
+				autoPlay
+				// ref={animation}
+				style={{
+					width: s(150),
+					height: s(150),
+				}}
+				// Find more Lottie files at https://lottiefiles.com/featured
+				source={require('../assets/BankCardAnimation.json')}
+			/> */}
 			<Text
 				style={{
 					color: '#32343E',
