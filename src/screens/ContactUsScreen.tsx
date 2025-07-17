@@ -3,6 +3,7 @@ import React from 'react';
 import UserAvatar from '../components/UserAvatar';
 import BackButton from '../components/BackButton';
 import { s, vs } from 'react-native-size-matters';
+import SocialSection from '../components/SocialSection';
 
 const ContactUsScreen = () => {
 	return (
@@ -10,7 +11,8 @@ const ContactUsScreen = () => {
 			<View style={styles.header}>
 				<BackButton />
 				<UserAvatar />
-			</View>
+			</View>			
+            <SocialSection />
 		</View>
 	);
 };
