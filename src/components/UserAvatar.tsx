@@ -4,7 +4,7 @@ import { s } from 'react-native-size-matters';
 
 const UserAvatar = () => {
 	return (
-		<Image source={require('../assets/cat.jpg')} style={styles.avatar} />
+		<Image source={require('../assets/avatar.jpg')} style={styles.avatar} />
 	);
 };
 
