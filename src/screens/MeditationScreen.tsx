@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { s, vs } from 'react-native-size-matters';
 import TopTabs from '../components/TopTabs';
+import MeditationCard from '../components/MeditationCard';
 
 const MeditationScreen = () => {
 	return (
@@ -20,6 +21,7 @@ const MeditationScreen = () => {
 				Lorem ipsum dolor sit amet.
 			</Text>
 			<TopTabs />
+      <MeditationCard />
 		</View>
 	);
 };
