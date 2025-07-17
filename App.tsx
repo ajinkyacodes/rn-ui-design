@@ -1,11 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import IntroScreen from './src/screens/IntroScreen';
-import ContactUsScreen from './src/screens/ContactUsScreen';
+import { StyleSheet } from 'react-native';
+import MeditationScreen from './src/screens/MeditationScreen';
 
 export default function App() {
   return (
-    <ContactUsScreen />
+    <MeditationScreen />
   );
 }
 
