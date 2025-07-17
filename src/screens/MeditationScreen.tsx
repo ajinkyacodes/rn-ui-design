@@ -25,13 +25,23 @@ const MeditationScreen = () => {
 			<FlatList
 				data={dummyData}
 				keyExtractor={(item) => item.id}
+				renderItem={({ item }) => (
+					<MeditationCard
+						imageURL={item.image}
+						title={item.title}
+						date={item.date}
+					/>
+				)}
 				showsVerticalScrollIndicator={false}
-        numColumns={2}
-        columnWrapperStyle={{
-          marginBottom: vs(16),
-          justifyContent: 'space-between'
-        }}
-				renderItem={({ item }) => <MeditationCard />}
+				numColumns={2}
+				columnWrapperStyle={{
+					marginBottom: vs(16),
+					justifyContent: 'space-between',
+				}}
+				contentContainerStyle={{
+					paddingBottom: vs(150),
+					paddingTop: vs(24),
+				}}
 			/>
 		</View>
 	);

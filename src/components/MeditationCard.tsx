@@ -5,17 +5,23 @@ import {
 	View,
 	Dimensions,
 } from 'react-native';
-import React from 'react';
+import React, { FC } from 'react';
 import { s, vs } from 'react-native-size-matters';
 import { VideoIcon } from '../assets/Icons';
 
 const PhoneWidth = Dimensions.get('window').width;
 const cardWidth = (PhoneWidth - s(18) * 3) / 2;
 
-const MeditationCard = () => {
+interface MeditationCardProps {
+	imageURL: string;
+	title: string;
+	date: string;
+}
+
+const MeditationCard: FC<MeditationCardProps> = ({ imageURL, title, date }) => {
 	return (
 		<ImageBackground
-			source={require('../assets/meditation.jpg')}
+			source={{ uri: imageURL }}
 			style={styles.imageContainer}
 			imageStyle={styles.image}
 		>
@@ -24,10 +30,10 @@ const MeditationCard = () => {
 				<Text style={styles.liveText}>Live</Text>
 			</View>
 			<View style={styles.cardContent}>
-				<Text style={styles.title}>Meditations</Text>
+				<Text style={styles.title}>{title}</Text>
 				<View style={{ flexDirection: 'row', alignItems: 'center' }}>
 					<VideoIcon />
-					<Text style={styles.dateText}>31st Jan - 09:00 am</Text>
+					<Text style={styles.dateText}>{date}</Text>
 				</View>
 			</View>
 		</ImageBackground>
