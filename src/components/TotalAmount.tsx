@@ -17,9 +17,9 @@ export default TotalAmount;
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: vs(40),
+		marginTop: vs(20),
 		flexDirection: 'row',
 		alignItems: 'center',
-		marginBottom: vs(28),
+		marginBottom: vs(20),
 	},
 });

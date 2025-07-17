@@ -6,6 +6,7 @@ import PaymentList from '../components/PaymentList';
 import BankCardBox from '../components/BankCardBox';
 import AddButton from '../components/AddButton';
 import TotalAmount from '../components/TotalAmount';
+import ButtonText from '../components/ButtonText';
 
 const PaymentScreen = () => {
 	return (
@@ -34,6 +35,7 @@ const PaymentScreen = () => {
 				<BankCardBox />
                 <AddButton />
                 <TotalAmount />
+                <ButtonText text="PAY & CONFIRM" />
 			</View>
 		</View>
 	);
