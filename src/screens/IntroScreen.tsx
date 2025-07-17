@@ -6,8 +6,8 @@ import SunImage from '../assets/SunImage';
 const IntroScreen = () => {
 	return (
 		<View style={styles.container}>
-            <FoodLogo />
-            <SunImage style={styles.sunImage} />
+			<FoodLogo />
+			<SunImage style={styles.sunImage} />
 		</View>
 	);
 };
@@ -15,15 +15,15 @@ const IntroScreen = () => {
 export default IntroScreen;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fff'
-    },
-    sunImage: {
-        position: "absolute",
-        bottom: 0,
-        right: 0
-    }
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: '#fff',
+	},
+	sunImage: {
+		position: 'absolute',
+		bottom: 0,
+		right: 0,
+	},
 });
