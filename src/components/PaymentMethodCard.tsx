@@ -1,6 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React, { FC, ReactNode } from 'react';
-import { CashIcon } from '../assets/Icons';
 import { s, vs } from 'react-native-size-matters';
 import Entypo from '@expo/vector-icons/Entypo';
 
