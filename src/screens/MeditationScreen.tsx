@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 import React from 'react';
 import { s, vs } from 'react-native-size-matters';
 import TopTabs from '../components/TopTabs';
 import MeditationCard from '../components/MeditationCard';
+import { dummyData } from '../data/data';
 
 const MeditationScreen = () => {
 	return (
@@ -21,7 +22,17 @@ const MeditationScreen = () => {
 				Lorem ipsum dolor sit amet.
 			</Text>
 			<TopTabs />
-      <MeditationCard />
+			<FlatList
+				data={dummyData}
+				keyExtractor={(item) => item.id}
+				showsVerticalScrollIndicator={false}
+        numColumns={2}
+        columnWrapperStyle={{
+          marginBottom: vs(16),
+          justifyContent: 'space-between'
+        }}
+				renderItem={({ item }) => <MeditationCard />}
+			/>
 		</View>
 	);
 };
