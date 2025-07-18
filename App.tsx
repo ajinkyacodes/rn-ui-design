@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import GetStartedScreen from './src/screens/GetStartedScreen';
+import ShoppingPageScreen from './src/screens/ShoppingPageScreen';
 
 export default function App() {
-	return <GetStartedScreen />;
+	return <ShoppingPageScreen />;
 }
 
 const styles = StyleSheet.create({
