@@ -4,6 +4,7 @@ import {
 	Text,
 	TouchableOpacity,
 	View,
+	StatusBar,
 } from 'react-native';
 import React from 'react';
 import { s, vs } from 'react-native-size-matters';
@@ -11,6 +12,7 @@ import { s, vs } from 'react-native-size-matters';
 const GetStartedScreen = () => {
 	return (
 		<View style={styles.container}>
+			<StatusBar barStyle='light-content' />
 			<ImageBackground
 				source={require('../assets/clothing.jpg')}
 				style={styles.backgroundImage}
