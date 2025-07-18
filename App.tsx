@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
-import StylishLogoScreen from './src/screens/StylishLogoScreen';
+import LoginScreen from './src/screens/LoginScreen';
 
 export default function App() {
   return (
-    <StylishLogoScreen />
+    <LoginScreen />
   );
 }
 
