@@ -4,6 +4,7 @@ import { s, vs } from 'react-native-size-matters';
 import GreyCircleIcon from '../components/GreyCircleIcon';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import { DrawerIcon, HandIcon } from '../assets/Icons';
+import OfferList from '../components/OfferList';
 
 const ShoppingPageScreen = () => {
 	return (
@@ -30,6 +31,7 @@ const ShoppingPageScreen = () => {
 				<HandIcon />
 			</View>
 			<Text style={{ marginBottom: vs(10) }}>Let’s start shopping!</Text>
+            <OfferList />
 		</View>
 	);
 };
