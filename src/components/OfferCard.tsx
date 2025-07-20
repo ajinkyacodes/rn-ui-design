@@ -3,19 +3,34 @@ import React, { FC } from 'react';
 import { s, vs } from 'react-native-size-matters';
 
 interface OfferCardProps {
+	isSelected?: boolean;
+	id: number;
 	offerText: string;
 	buttonText: string;
+	onPress?: () => void;
 }
 
-const OfferCard: FC<OfferCardProps> = ({ offerText, buttonText }) => {
+const OfferCard: FC<OfferCardProps> = ({
+	isSelected = false,
+	id,
+	offerText,
+	buttonText,
+	onPress,
+}) => {
 	return (
-		<View style={styles.container}>
+		<TouchableOpacity
+			onPress={onPress}
+			style={[styles.card, isSelected && styles.selectedCardStyle]}
+		>
+			<View style={{ display: 'none' }}>
+				<Text>{id}</Text>
+			</View>
 			<Text style={{ color: '#FFF', fontWeight: 'bold', fontSize: s(16) }}>
 				{offerText}
 			</Text>
-			<TouchableOpacity
+			<View
 				style={{
-					backgroundColor: '#50D63B',
+					backgroundColor: isSelected ? '#fff' : '#50D63B',
 					padding: s(5),
 					marginTop: vs(14),
 					width: s(80),
@@ -23,24 +38,32 @@ const OfferCard: FC<OfferCardProps> = ({ offerText, buttonText }) => {
 					alignItems: 'center',
 				}}
 			>
-				<Text style={{ fontSize: s(12), fontWeight: 'bold', color: '#fff' }}>
+				<Text
+					style={{
+						fontSize: s(12),
+						fontWeight: 'bold',
+						color: isSelected ? '#F17547' : '#fff',
+					}}
+				>
 					{buttonText}
 				</Text>
-			</TouchableOpacity>
-		</View>
+			</View>
+		</TouchableOpacity>
 	);
 };
 
 export default OfferCard;
 
 const styles = StyleSheet.create({
-	container: {
+	card: {
 		maxWidth: s(250),
 		backgroundColor: '#1383F1',
 		borderRadius: s(15),
 		paddingHorizontal: s(20),
 		paddingTop: vs(24),
 		paddingBottom: vs(18),
-		marginRight: s(15),
+	},
+	selectedCardStyle: {
+		backgroundColor: '#F17547',
 	},
 });
