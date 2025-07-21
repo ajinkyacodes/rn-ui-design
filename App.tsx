@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import StylesheetConcept from './src/basics/StylesheetConcept';
+import ImageConcept from './src/basics/ImageConcept';
 
 export default function App() {
-	return <StylesheetConcept />;
+	return <ImageConcept />;
 }
 
 const styles = StyleSheet.create({});
