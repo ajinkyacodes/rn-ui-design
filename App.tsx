@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import SafeAreaViewTag from './src/basics/SafeAreaViewTag';
+import TextTag from './src/basics/TextTag';
 
 export default function App() {
-	return <SafeAreaViewTag />;
+	return <TextTag />;
 }
 
 const styles = StyleSheet.create({});
