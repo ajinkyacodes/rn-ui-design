@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ImageConcept from './src/basics/ImageConcept';
+import ButtonsConcept from './src/basics/ButtonsConcept';
 
 export default function App() {
-	return <ImageConcept />;
+	return <ButtonsConcept />;
 }
 
 const styles = StyleSheet.create({});
