@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import TextTag from './src/basics/TextTag';
+import StylesheetConcept from './src/basics/StylesheetConcept';
 
 export default function App() {
-	return <TextTag />;
+	return <StylesheetConcept />;
 }
 
 const styles = StyleSheet.create({});
