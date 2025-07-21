@@ -1,15 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ShoppingPageScreen from './src/screens/ShoppingPageScreen';
+import SafeAreaViewTag from './src/basics/SafeAreaViewTag';
 
 export default function App() {
-	return <ShoppingPageScreen />;
+	return <SafeAreaViewTag />;
 }
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-});
+const styles = StyleSheet.create({});
