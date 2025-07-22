@@ -6,19 +6,22 @@ const FlexConcepts = () => {
 		<View style={styles.container}>
 			<View
 				style={{
-					flex: 2,
+					width: 100,
+					height: 200,
 					backgroundColor: 'tomato',
 				}}
 			/>
 			<View
 				style={{
-					flex: 1,
+					width: 100,
+					height: 100,
 					backgroundColor: 'blue',
 				}}
 			/>
 			<View
 				style={{
-					flex: 1,
+					width: 100,
+					height: 100,
 					backgroundColor: 'gold',
 				}}
 			/>
@@ -32,5 +35,8 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: 'white',
+		flexDirection: 'row', // the main access is the horizontal access
+		justifyContent: 'space-evenly', // for horizontal
+		alignItems: 'baseline', // for vertical
 	},
 });
