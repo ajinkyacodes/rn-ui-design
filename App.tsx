@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ScrollViewConcept from './src/basics/ScrollViewConcept';
+import PlatformConcept from './src/basics/PlatformConcept';
 
 export default function App() {
-	return <ScrollViewConcept />;
+	return <PlatformConcept />;
 }
 
 const styles = StyleSheet.create({});
