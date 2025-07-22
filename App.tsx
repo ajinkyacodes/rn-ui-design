@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import PlatformConcept from './src/basics/PlatformConcept';
+import LoadersConcept from './src/basics/LoadersConcept';
 
 export default function App() {
-	return <PlatformConcept />;
+	return <LoadersConcept />;
 }
 
 const styles = StyleSheet.create({});
