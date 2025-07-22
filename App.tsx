@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ResponsiveUIConcept from './src/basics/ResponsiveUIConcept';
+import UseStateHookConcept from './src/basics/UseStateHookConcept';
 
 export default function App() {
-	return <ResponsiveUIConcept />;
+	return <UseStateHookConcept />;
 }
 
 const styles = StyleSheet.create({});
