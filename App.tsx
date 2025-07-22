@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ViewsConcept from './src/basics/ViewsConcept';
+import MarginPaddingConcept from './src/basics/MarginPaddingConcept';
 
 export default function App() {
-	return <ViewsConcept />;
+	return <MarginPaddingConcept />;
 }
 
 const styles = StyleSheet.create({});
