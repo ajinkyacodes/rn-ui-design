@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import PositionConcept from './src/basics/PositionConcept';
+import DimensionsConcept from './src/basics/DimensionsConcept';
 
 export default function App() {
-	return <PositionConcept />;
+	return <DimensionsConcept />;
 }
 
 const styles = StyleSheet.create({});
