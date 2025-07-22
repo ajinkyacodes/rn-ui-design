@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import DimensionsConcept from './src/basics/DimensionsConcept';
+import ResponsiveUIConcept from './src/basics/ResponsiveUIConcept';
 
 export default function App() {
-	return <DimensionsConcept />;
+	return <ResponsiveUIConcept />;
 }
 
 const styles = StyleSheet.create({});
