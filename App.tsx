@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import FlexConcepts from './src/basics/FlexConcepts';
+import PositionConcept from './src/basics/PositionConcept';
 
 export default function App() {
-	return <FlexConcepts />;
+	return <PositionConcept />;
 }
 
 const styles = StyleSheet.create({});
