@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ImageBackgroundConcept from './src/basics/ImageBackgroundConcept';
+import TextInputConcept from './src/basics/TextInputConcept';
 
 export default function App() {
-	return <ImageBackgroundConcept />;
+	return <TextInputConcept />;
 }
 
 const styles = StyleSheet.create({});
