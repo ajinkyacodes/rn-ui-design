@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import ModalConcept from './src/basics/ModalConcept';
+import VectorIconsConcept from './src/basics/VectorIconsConcept';
 
 export default function App() {
-	return <ModalConcept />;
+	return <VectorIconsConcept />;
 }
 
 const styles = StyleSheet.create({});
