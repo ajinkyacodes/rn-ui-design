@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import VectorIconsConcept from './src/basics/VectorIconsConcept';
+import ImageBackgroundConcept from './src/basics/ImageBackgroundConcept';
 
 export default function App() {
-	return <VectorIconsConcept />;
+	return <ImageBackgroundConcept />;
 }
 
 const styles = StyleSheet.create({});

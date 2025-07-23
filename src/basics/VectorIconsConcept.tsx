@@ -23,7 +23,7 @@ export default VectorIconsConcept;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#fff',
+		backgroundColor: 'gold',
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
