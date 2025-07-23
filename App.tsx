@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import TextInputConcept from './src/basics/TextInputConcept';
+import ShoppingPageScreen from './src/screens/ShoppingPageScreen';
 
 export default function App() {
-	return <TextInputConcept />;
+	return <ShoppingPageScreen />;
 }
 
 const styles = StyleSheet.create({});

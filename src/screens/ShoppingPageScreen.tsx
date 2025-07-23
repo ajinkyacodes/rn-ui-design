@@ -5,6 +5,7 @@ import GreyCircleIcon from '../components/GreyCircleIcon';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import { DrawerIcon, HandIcon } from '../assets/Icons';
 import OfferList from '../components/OfferList';
+import CategoryIconList from '../components/CategoryIconList';
 
 const ShoppingPageScreen = () => {
 	return (
@@ -39,11 +40,22 @@ const ShoppingPageScreen = () => {
 			</View>
 			<OfferList />
 			<View style={styles.categoriesText}>
-				<Text style={{ fontSize: s(20), fontWeight: 'semibold' }}>Top Categories</Text>
+				<Text style={{ fontSize: s(20), fontWeight: 'semibold' }}>
+					Top Categories
+				</Text>
 				<TouchableOpacity>
-					<Text style={{ color: '#F17547', fontWeight: 'semibold', fontSize: s(16) }}>See All</Text>
+					<Text
+						style={{
+							color: '#F17547',
+							fontWeight: 'semibold',
+							fontSize: s(16),
+						}}
+					>
+						See All
+					</Text>
 				</TouchableOpacity>
 			</View>
+			<CategoryIconList />
 		</>
 	);
 };
@@ -59,11 +71,11 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 	},
-    categoriesText: {
-        marginTop: vs(15),
-        paddingHorizontal: s(23),
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    }
+	categoriesText: {
+		marginTop: vs(15),
+		paddingHorizontal: s(23),
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
+	},
 });
