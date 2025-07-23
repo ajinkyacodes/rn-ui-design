@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
-import UseStateHookConcept from './src/basics/UseStateHookConcept';
+import ModalConcept from './src/basics/ModalConcept';
 
 export default function App() {
-	return <UseStateHookConcept />;
+	return <ModalConcept />;
 }
 
 const styles = StyleSheet.create({});
