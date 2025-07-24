@@ -1,10 +1,14 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 const GoldScreen = () => {
 	const navigation = useNavigation();
-    
+
+	const { name, params } = useRoute();
+
+	console.log(name, params);
+
 	return (
 		<View style={styles.container}>
 			<Text style={styles.text}>Gold Screen</Text>
@@ -12,6 +16,7 @@ const GoldScreen = () => {
 				title='Go to Purple Screen'
 				onPress={() => navigation.navigate('PurpleScreen')}
 			/>
+			<Text>Hello, {params.name}</Text>
 		</View>
 	);
 };
