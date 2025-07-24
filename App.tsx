@@ -1,10 +1,13 @@
 import { StyleSheet } from 'react-native';
-import GoldScreen from './src/pages/GoldScreen';
-import PurpleScreen from './src/pages/PurpleScreen';
-import TomatoScreen from './src/pages/TomatoScreen';
+import MainStackNavigator from './src/navigation/MainStackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
-	return <TomatoScreen />;
+	return (
+		<NavigationContainer>
+			<MainStackNavigator />
+		</NavigationContainer>
+	);
 }
 
 const styles = StyleSheet.create({});

@@ -1,10 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 const GoldScreen = () => {
+	const navigation = useNavigation();
+    
 	return (
 		<View style={styles.container}>
 			<Text style={styles.text}>Gold Screen</Text>
+			<Button
+				title='Go to Purple Screen'
+				onPress={() => navigation.navigate('PurpleScreen')}
+			/>
 		</View>
 	);
 };
