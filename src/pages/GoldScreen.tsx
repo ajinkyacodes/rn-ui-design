@@ -16,7 +16,7 @@ const GoldScreen = () => {
 				title='Go to Purple Screen'
 				onPress={() => navigation.navigate('PurpleScreen')}
 			/>
-			<Text>Hello, {params.name}</Text>
+			<Text>Hello, {params?.name}</Text>
 		</View>
 	);
 };
