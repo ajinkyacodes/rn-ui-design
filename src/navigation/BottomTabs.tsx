@@ -11,6 +11,7 @@ function MyTabs() {
 	return (
 		<Tab.Navigator
 			screenOptions={{
+                headerShown: false,
 				tabBarActiveTintColor: '#2b1ccb',
 				tabBarInactiveTintColor: '#A7CCF6',
 				tabBarStyle: {
@@ -31,26 +32,26 @@ function MyTabs() {
 				}}
 				name='TomatoScreen'
 				component={TomatoScreen}
-			/>
-			<Tab.Screen
-				options={{
-					title: 'Purple',
-					tabBarIcon: ({ color, focused, size }) => {
-						return <AntDesign name='profile' size={24} color={color} />;
-					},
-				}}
-				name='PurpleScreen'
-				component={PurpleScreen}
-			/>
+			/>			
 			<Tab.Screen
 				options={{
 					title: 'Gold',
 					tabBarIcon: ({ color, focused, size }) => {
-						return <Feather name='settings' size={24} color={color} />;
+						return <AntDesign name='profile' size={24} color={color} />;
 					},
 				}}
 				name='GoldScreen'
 				component={GoldScreen}
+			/>
+            <Tab.Screen
+				options={{
+					title: 'Purple',
+					tabBarIcon: ({ color, focused, size }) => {
+						return <Feather name='settings' size={24} color={color} />;
+					},
+				}}
+				name='PurpleScreen'
+				component={PurpleScreen}
 			/>
 		</Tab.Navigator>
 	);
