@@ -7,10 +7,22 @@ const Stack = createStackNavigator();
 
 function MainStackNavigator() {
 	return (
-		<Stack.Navigator>
-			<Stack.Screen name='TomatoScreen' component={TomatoScreen} />
+		<Stack.Navigator
+			screenOptions={{
+				headerShown: false,
+			}}
+			initialRouteName='TomatoScreen'
+		>
 			<Stack.Screen name='GoldScreen' component={GoldScreen} />
-			<Stack.Screen name='PurpleScreen' component={PurpleScreen} />
+			<Stack.Screen name='TomatoScreen' component={TomatoScreen} />
+			<Stack.Screen
+				options={{
+					headerShown: true,
+					title: 'Purple',
+				}}
+				name='PurpleScreen'
+				component={PurpleScreen}
+			/>
 		</Stack.Navigator>
 	);
 }
