@@ -2,10 +2,11 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
+import { RootState } from '../store/store';
 
 const GoldScreen = () => {
-	const totalLikes = useSelector((state) => state.dataReducer.totalLikes);
-	const userName = useSelector((state) => state.dataReducer.userName);	
+	const totalLikes = useSelector((state: RootState) => state.dataReducer.totalLikes);
+	const userName = useSelector((state: RootState) => state.dataReducer.userName);	
 
 	const navigation = useNavigation();
 

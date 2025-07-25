@@ -6,12 +6,13 @@ import {
 	increaseTotalLikes,
 	increaseTotalLikesByAmount,
 } from '../store/actions/dataActions';
+import { RootState } from '../store/store';
 
 const TomatoScreen = () => {
-	const totalLikes = useSelector((state) => state.dataReducer.totalLikes);
+	const totalLikes = useSelector((state: RootState) => state.dataReducer.totalLikes);
 	const dispatch = useDispatch();
 
-	const userName = useSelector((state) => state.dataReducer.userName);
+	const userName = useSelector((state: RootState) => state.dataReducer.userName);
 
 	const navigation = useNavigation();
 

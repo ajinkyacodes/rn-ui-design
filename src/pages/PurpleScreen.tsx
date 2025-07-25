@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { RootState } from '../store/store';
 
 const PurpleScreen = () => {
-	const totalLikes = useSelector((state) => state.dataReducer.totalLikes);
-	const userName = useSelector((state) => state.dataReducer.userName);
-	const userRole = useSelector((state) => state.settingsReducer.userRole);
+	const totalLikes = useSelector((state: RootState) => state.dataReducer.totalLikes);
+	const userName = useSelector((state: RootState) => state.dataReducer.userName);
+	const userRole = useSelector((state: RootState) => state.settingsReducer.userRole);
 
 	return (
 		<View style={styles.container}>
