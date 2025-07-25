@@ -2,7 +2,10 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
-import { increaseTotalLikes } from '../store/actions/dataActions';
+import {
+	increaseTotalLikes,
+	increaseTotalLikesByAmount,
+} from '../store/actions/dataActions';
 
 const TomatoScreen = () => {
 	const totalLikes = useSelector((state) => state.totalLikes);
@@ -32,6 +35,10 @@ const TomatoScreen = () => {
 			<Text>Total Likes: {totalLikes}</Text>
 			<Text>User Name: {userName}</Text>
 			<Button title='Like' onPress={() => dispatch(increaseTotalLikes())} />
+			<Button
+				title='Increase Likes By Amount'
+				onPress={() => dispatch(increaseTotalLikesByAmount(50))}
+			/>
 		</View>
 	);
 };
