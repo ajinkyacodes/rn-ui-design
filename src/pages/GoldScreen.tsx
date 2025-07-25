@@ -4,8 +4,8 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 
 const GoldScreen = () => {
-	const totalLikes = useSelector((state) => state.totalLikes);
-	const userName = useSelector((state) => state.userName);	
+	const totalLikes = useSelector((state) => state.dataReducer.totalLikes);
+	const userName = useSelector((state) => state.dataReducer.userName);	
 
 	const navigation = useNavigation();
 

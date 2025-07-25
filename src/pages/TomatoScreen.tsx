@@ -8,10 +8,10 @@ import {
 } from '../store/actions/dataActions';
 
 const TomatoScreen = () => {
-	const totalLikes = useSelector((state) => state.totalLikes);
+	const totalLikes = useSelector((state) => state.dataReducer.totalLikes);
 	const dispatch = useDispatch();
 
-	const userName = useSelector((state) => state.userName);
+	const userName = useSelector((state) => state.dataReducer.userName);
 
 	const navigation = useNavigation();
 
