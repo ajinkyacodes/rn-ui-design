@@ -6,6 +6,7 @@ const PurpleScreen = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.text}>Purple Screen</Text>			
+			<Text>Total Likes: 7</Text>
 		</View>
 	);
 };

@@ -1,5 +1,5 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
 const GoldScreen = () => {
@@ -17,6 +17,7 @@ const GoldScreen = () => {
 				onPress={() => navigation.navigate('PurpleScreen')}
 			/>
 			<Text>Hello, {params?.name}</Text>
+			<Text>Total Likes: 7</Text>
 		</View>
 	);
 };

@@ -7,7 +7,7 @@ import MyTabs from '../navigation/BottomTabs';
 const EnableNavigation = () => {
 	return (
 		<NavigationContainer>
-			<MainStackNavigator />
+			<MyTabs />
 		</NavigationContainer>
 	);
 };

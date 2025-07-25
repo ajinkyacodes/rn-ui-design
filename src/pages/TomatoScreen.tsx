@@ -1,8 +1,10 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
 const TomatoScreen = () => {
+	const [totalLikes, setTotalLikes] = useState(9);
+
 	const navigation = useNavigation();
 
 	return (
@@ -22,6 +24,8 @@ const TomatoScreen = () => {
 			>
 				Name: Codes
 			</Text>
+			<Text>Total Likes: {totalLikes}</Text>
+			<Button title='Like' onPress={()=>setTotalLikes(totalLikes+1)} />
 		</View>
 	);
 };
