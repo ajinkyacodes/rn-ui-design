@@ -3,12 +3,16 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MainStackNavigator from '../navigation/MainStackNavigator';
 import MyTabs from '../navigation/BottomTabs';
+import { Provider } from 'react-redux';
+import store from '../store/store';
 
 const EnableNavigation = () => {
 	return (
-		<NavigationContainer>
-			<MyTabs />
-		</NavigationContainer>
+		<Provider store={store}>
+			<NavigationContainer>
+				<MyTabs />
+			</NavigationContainer>
+		</Provider>
 	);
 };
 

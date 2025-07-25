@@ -1,8 +1,12 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
 
 const GoldScreen = () => {
+	const totalLikes = useSelector((state) => state.totalLikes);
+	const userName = useSelector((state) => state.userName);	
+
 	const navigation = useNavigation();
 
 	const { name, params } = useRoute();
@@ -17,7 +21,8 @@ const GoldScreen = () => {
 				onPress={() => navigation.navigate('PurpleScreen')}
 			/>
 			<Text>Hello, {params?.name}</Text>
-			<Text>Total Likes: 7</Text>
+			<Text>Total Likes: {totalLikes}</Text>
+			<Text>User Name: {userName}</Text>
 		</View>
 	);
 };

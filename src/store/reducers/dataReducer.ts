@@ -1,5 +1,6 @@
 const initialState = {
-	totalLikes: 9,
+	totalLikes: 20,
+    userName: 'ajinkyacodes'
 };
 
 export const dataReducer = (state = initialState, action) => {

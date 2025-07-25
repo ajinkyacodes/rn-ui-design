@@ -1,9 +1,11 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
 
 const TomatoScreen = () => {
-	const [totalLikes, setTotalLikes] = useState(9);
+	const totalLikes = useSelector((state) => state.totalLikes);
+	const userName = useSelector((state) => state.userName);
 
 	const navigation = useNavigation();
 
@@ -25,7 +27,8 @@ const TomatoScreen = () => {
 				Name: Codes
 			</Text>
 			<Text>Total Likes: {totalLikes}</Text>
-			<Button title='Like' onPress={()=>setTotalLikes(totalLikes+1)} />
+			<Text>User Name: {userName}</Text>
+			{/* <Button title='Like' onPress={() => setTotalLikes(totalLikes + 1)} /> */}
 		</View>
 	);
 };
